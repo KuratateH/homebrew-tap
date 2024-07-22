@@ -40,5 +40,5 @@ class RUM < Formula
 
   test do
     system "#{bin}/RUM --version"
-  done
+  end
 end
