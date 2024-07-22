@@ -1,4 +1,4 @@
-VERSION="0.1.15"
+VERSION="0.1.0"
 PRODUCT="RUM"
 
 class RUM < Formula
