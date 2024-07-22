@@ -1,9 +1,9 @@
 VERSION="0.1.0"
-PRODUCT="RUM"
+PRODUCT="rum"
 
-class RUM < Formula
+class rum < Formula
   desc "A tool for archiving files and directories and extracting several archive formats."
-  homepage "https://github.com/KuratateH/RUM"
+  homepage "https://github.com/KuratateH/rum"
   version VERSION
   license "MIT"
 
@@ -31,7 +31,7 @@ class RUM < Formula
   end
 
   def install
-    bin.install "RUM"
+    bin.install "rum"
 
     bash_completion.install "completions/bash/rum" if build.with? "completions"
     fish_completion.install "completions/fish/rum" if build.with? "completions"
@@ -39,6 +39,6 @@ class RUM < Formula
   end
 
   test do
-    system "#{bin}/RUM --version"
+    system "#{bin}/rum --version"
   end
 end
