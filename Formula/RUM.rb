@@ -12,22 +12,22 @@ class RUM < Formula
 
   if OS.mac? && Hardware::CPU.intel?
     url "https://github.com/KuratateH/#{PRODUCT}/releases/download/v#{VERSION}/#{PRODUCT}-#{VERSION}_darwin_amd64.tar.gz"
-    sha256 "0fc84ded2d5a630c5d6c18781e96c03156e81e5be06a214cf018d46866bbe37c"
+    sha256 "080d6fa0151284208c4e3032e0ce8a7eadeb9c3a7f22965a99220b41bdb6c84f"
   end
 
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/KuratateH/#{PRODUCT}/releases/download/v#{VERSION}/#{PRODUCT}-#{VERSION}_darwin_arm64.tar.gz"
-    sha256 "231d31f06856146b6cee6829e577a8e89f178b522829aa725a3c6ad73b14dac0"
+    sha256 "9dd44399437577ff2909d99afd15e4eab4416d1e2b6dbabfd33865bb0118e035"
   end
 
   if OS.linux? && Hardware::CPU.intel?
     url "https://github.com/KuratateH/#{PRODUCT}/releases/download/v#{VERSION}/#{PRODUCT}-#{VERSION}_linux_amd64.tar.gz"
-    sha256 "8a6ca11f56e2f24f5de0fd853d80e6e735bd76dd6985cecc6dd3257c1473f46a"
+    sha256 "3c00ed66c5bebf097ab8290c5b459322b4430049eecee1fda5cf9490892a575d"
   end
 
   if OS.linux? && Hardware::CPU.arm?
     url "https://github.com/KuratateH/#{PRODUCT}/releases/download/v#{VERSION}/#{PRODUCT}-#{VERSION}_linux_arm64.tar.gz"
-    sha256 "8f84ea88797ad7e1b6f872be227211da2722c31c1a8b7acc80079028631c922c"
+    sha256 "33355f32b26872b8efa2ddc93b0c5d489b5854cd81a62c66e6f47a16f18bc287"
   end
 
   def install
